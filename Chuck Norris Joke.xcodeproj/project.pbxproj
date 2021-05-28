@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50AEB7AD305F3A7CCD22FA3D /* Pods_Chuck_Norris_Joke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE589599F6F7BD4AD2DB1CB /* Pods_Chuck_Norris_Joke.framework */; };
 		D7126FA1266184D700F0A6FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7126FA0266184D700F0A6FF /* AppDelegate.swift */; };
 		D7126FA3266184D700F0A6FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7126FA2266184D700F0A6FF /* SceneDelegate.swift */; };
 		D7126FA5266184D700F0A6FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7126FA4266184D700F0A6FF /* ViewController.swift */; };
-		D7126FA8266184D700F0A6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7126FA6266184D700F0A6FF /* Main.storyboard */; };
 		D7126FAA266184D900F0A6FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7126FA9266184D900F0A6FF /* Assets.xcassets */; };
 		D7126FAD266184D900F0A6FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7126FAB266184D900F0A6FF /* LaunchScreen.storyboard */; };
+		D7126FB6266185AD00F0A6FF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7126FB5266185AD00F0A6FF /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59B25E7291E5A4217C0AB87D /* Pods-Chuck Norris Joke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuck Norris Joke.release.xcconfig"; path = "Target Support Files/Pods-Chuck Norris Joke/Pods-Chuck Norris Joke.release.xcconfig"; sourceTree = "<group>"; };
+		9AE589599F6F7BD4AD2DB1CB /* Pods_Chuck_Norris_Joke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chuck_Norris_Joke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3651D4EB5229C9B19213988 /* Pods-Chuck Norris Joke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuck Norris Joke.debug.xcconfig"; path = "Target Support Files/Pods-Chuck Norris Joke/Pods-Chuck Norris Joke.debug.xcconfig"; sourceTree = "<group>"; };
 		D7126F9D266184D700F0A6FF /* Chuck Norris Joke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chuck Norris Joke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7126FA0266184D700F0A6FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7126FA2266184D700F0A6FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D7126FA4266184D700F0A6FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7126FA7266184D700F0A6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7126FA9266184D900F0A6FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7126FAC266184D900F0A6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7126FAE266184D900F0A6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7126FB5266185AD00F0A6FF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50AEB7AD305F3A7CCD22FA3D /* Pods_Chuck_Norris_Joke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5587B8552B8BF434047B5CB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AE589599F6F7BD4AD2DB1CB /* Pods_Chuck_Norris_Joke.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7126F94266184D700F0A6FF = {
 			isa = PBXGroup;
 			children = (
 				D7126F9F266184D700F0A6FF /* Chuck Norris Joke */,
 				D7126F9E266184D700F0A6FF /* Products */,
+				E1F2459AE01A5EEF8574A2A3 /* Pods */,
+				5587B8552B8BF434047B5CB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,33 @@
 		D7126F9F266184D700F0A6FF /* Chuck Norris Joke */ = {
 			isa = PBXGroup;
 			children = (
+				D7126FB42661859500F0A6FF /* Services */,
 				D7126FA0266184D700F0A6FF /* AppDelegate.swift */,
 				D7126FA2266184D700F0A6FF /* SceneDelegate.swift */,
 				D7126FA4266184D700F0A6FF /* ViewController.swift */,
-				D7126FA6266184D700F0A6FF /* Main.storyboard */,
 				D7126FA9266184D900F0A6FF /* Assets.xcassets */,
 				D7126FAB266184D900F0A6FF /* LaunchScreen.storyboard */,
 				D7126FAE266184D900F0A6FF /* Info.plist */,
 			);
 			path = "Chuck Norris Joke";
+			sourceTree = "<group>";
+		};
+		D7126FB42661859500F0A6FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D7126FB5266185AD00F0A6FF /* Network.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E1F2459AE01A5EEF8574A2A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3651D4EB5229C9B19213988 /* Pods-Chuck Norris Joke.debug.xcconfig */,
+				59B25E7291E5A4217C0AB87D /* Pods-Chuck Norris Joke.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7126FB1266184D900F0A6FF /* Build configuration list for PBXNativeTarget "Chuck Norris Joke" */;
 			buildPhases = (
+				6DD4F0591B193CF524963DB8 /* [CP] Check Pods Manifest.lock */,
 				D7126F99266184D700F0A6FF /* Sources */,
 				D7126F9A266184D700F0A6FF /* Frameworks */,
 				D7126F9B266184D700F0A6FF /* Resources */,
+				1404558E0453D2B13EB9D2C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +161,52 @@
 			files = (
 				D7126FAD266184D900F0A6FF /* LaunchScreen.storyboard in Resources */,
 				D7126FAA266184D900F0A6FF /* Assets.xcassets in Resources */,
-				D7126FA8266184D700F0A6FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1404558E0453D2B13EB9D2C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chuck Norris Joke/Pods-Chuck Norris Joke-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chuck Norris Joke/Pods-Chuck Norris Joke-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chuck Norris Joke/Pods-Chuck Norris Joke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DD4F0591B193CF524963DB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chuck Norris Joke-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7126F99266184D700F0A6FF /* Sources */ = {
@@ -139,6 +215,7 @@
 			files = (
 				D7126FA5266184D700F0A6FF /* ViewController.swift in Sources */,
 				D7126FA1266184D700F0A6FF /* AppDelegate.swift in Sources */,
+				D7126FB6266185AD00F0A6FF /* Network.swift in Sources */,
 				D7126FA3266184D700F0A6FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D7126FA6266184D700F0A6FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7126FA7266184D700F0A6FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D7126FAB266184D900F0A6FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +352,7 @@
 		};
 		D7126FB2266184D900F0A6FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3651D4EB5229C9B19213988 /* Pods-Chuck Norris Joke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		D7126FB3266184D900F0A6FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B25E7291E5A4217C0AB87D /* Pods-Chuck Norris Joke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
